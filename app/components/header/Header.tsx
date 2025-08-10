@@ -23,7 +23,17 @@ export function Header() {
           <img src="/logo-dark-styled.png" alt="logo" className="w-[90px] inline-block hidden dark:block" />
         </a>
       </div>
-      {chat.started && ( // Display ChatDescription and HeaderActionButtons only when the chat has started.
+
+      <div className="flex-1" />
+
+      <a
+        href="/pdf-mitra"
+        className="mr-3 px-3 py-1.5 rounded border border-bolt-elements-borderColor text-sm hover:bg-bolt-elements-background-depth-2"
+      >
+        PDF मित्र
+      </a>
+
+      {chat.started && (
         <>
           <span className="flex-1 px-4 truncate text-center text-bolt-elements-textPrimary">
             <ClientOnly>{() => <ChatDescription />}</ClientOnly>

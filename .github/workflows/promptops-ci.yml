@@ -1,0 +1,9 @@
+name: PromptOps
+on: [pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate prompt JSON outputs
+        run: echo "placeholder – add repo-specific checks later"
